@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click here](https://github.com/Brighties/news-homepage.git)
-- Live Site URL: [Click Here](https://your-live-site-url.com)
+- Live Site URL: [Click Here](https://delightful-rabanadas-a28217.netlify.app)
 
 ## My process
 
