@@ -1,0 +1,60 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  min-height: 100%;
+
+  &__image-container {
+    & img {
+      min-height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 1rem;
+    height: 40%;
+    &-header {
+      color: map-get($colors, "very-dark-blue");
+      font-size: map-get($font-size, "text-lg");
+      font-weight: map-get($font-weights, "extra-bold");
+      line-height: 1;
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 2;
+    }
+  }
+
+  &__btn {
+    background: map-get($colors, "soft-red");
+    color: map-get($colors, "off-white");
+    font-weight: 500;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      background: map-get($colors, "very-dark-blue");
+      cursor: pointer;
+    }
+  }
+}
+
+/* BUTTON COMPONENT */
+.btn {
+  letter-spacing: 2px;
+  max-width: max-content;
+  padding: 0.3em 1.5em;
+  text-transform: uppercase;
+  border: 0;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 300px) {
+  .main__content {
+    flex-wrap: wrap;
+  }
+}

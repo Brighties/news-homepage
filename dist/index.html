@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/src.dbcf305e.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.7d369b0f.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<script src="/src.dbcf305e.js"></script></head>
+
+<body>
+  <main class="full-page-wrapper">
+    <!-- nav bar-->
+    <div class="nav-container">
+      <nav role="navigation" class="nav">
+        <div class="flex nav__icon-wrapper">
+          <p class="nav__icon">W.</p>
+          <p class="nav__menu-bar">&equiv;</p>
+        </div>
+
+        <ul role="list" class="nav__list">
+          <li class="nav__list-item active">Home</li>
+          <li class="nav__list-item">News</li>
+          <li class="nav__list-item">Popular</li>
+          <li class="nav__list-item">Trending</li>
+          <li class="nav__list-item">Categories</li>
+        </ul>
+
+
+      </nav>
+    </div>
+    <!-- 2ND SECTION -->
+
+    <div class="main-container">
+      <main class="main">
+        <figure class="main__image-container">
+          <img src="/image-web-3-desktop.779aef12.jpg" alt="">
+        </figure>
+        <article class="main__content flex">
+          <h1 role="banner" class="main__content-header">
+            The Bright Future of Web 3.0?
+          </h1>
+
+          <div class="main__content-body">
+            <p>
+              We dive into the next evolution of the web that claims to put
+              the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <button class="btn main__btn">Read more</button>
+          </div>
+        </article>
+      </main>
+    </div>
+
+    <!-- 3RD SECTION -->
+    <div class="news-container">
+      <aside role="complementary" class="news">
+        <header>
+          <h2 class="news__header color-soft-orange text-md">New</h2>
+        </header>
+        <article class="news__article">
+          <h3 class="news__article-header">New Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article class="news__article">
+          <h3 class="news__article-header">The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <article class="news__article">
+          <h3 class="news__article-header">Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at
+            what that means.
+          </p>
+        </article>
+      </aside>
+    </div>
+    <!-- SECONDARY ARTICLE SECTION -->
+    <div class="subordinate-container">
+      <section role="complementary" class="subordinate">
+        <article class="subordinate__article subordinate__article--1">
+          <figure class="subordinate__article-image">
+            <img src="/image-retro-pcs.37b20f3e.jpg" alt="">
+          </figure>
+          <div class="subordinate__article-content">
+            <h2 class="color-grayish-blue">01</h2>
+            <h3 class="color-very-dark-blue subordinate__article-content-header">Reviving Retro PC's</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+        <article class="subordinate__article subordinate__article--2">
+          <figure class="subordinate__article-image">
+            <img src="/image-top-laptops.88aed07f.jpg" alt="">
+          </figure>
+          <div class="subordinate__article-content">
+            <h2 class="color-grayish-blue">02</h2>
+            <h3 class="color-very-dark-blue subordinate__article-content-header">Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+        <article class="subordinate__article subordinate__article--3">
+          <figure class="subordinate__article-image">
+            <img src="/image-gaming-growth.5ea29ab9.jpg" alt="">
+          </figure>
+          <div class="subordinate__article-content">
+            <h2 class="color-grayish-blue">03</h2>
+            <h3 class="color-very-dark-blue subordinate__article-content-header">The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <!-- ATTRIBUTION -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">BRIGHT</a>.
+  </div>
+
+  <!--JAVASCRIPT -->
+  <script>document.addEventListener('DOMContentLoaded', function () {
+  var navToggler = document.querySelector('.nav__menu-bar');
+  var navList = document.querySelector('.nav__list');
+  navToggler.addEventListener('click', function () {
+    navList.classList.toggle('show-list-items');
+    navToggler.classList.toggle('rotate');
+  });
+});</script>
+</body>
+
+</html>

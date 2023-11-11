@@ -1,0 +1,27 @@
+.news {
+  background: map-get($colors, "very-dark-blue");
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  padding: 1em;
+  &__article {
+    padding: 1em 0;
+
+    &-header {
+      color: map-get($colors, "off-white");
+      font-size: 12.5px;
+    }
+  }
+}
+.news__article:not(:last-of-type) {
+  border-bottom: 1px solid map-get($colors, "dark-grayish-blue");
+}
+
+@media screen and (min-width: 768px) {
+  .news__header {
+    font-size: map-get($font-size, "text-lg");
+    font-weight: 900;
+  }
+}
